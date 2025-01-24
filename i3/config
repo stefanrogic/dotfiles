@@ -19,17 +19,17 @@ for_window [class="^.*"] border pixel 2
 ###############
 ### STARTUP ###
 ###############
-exec --no-startup-id i3-msg 'workspace 6; exec discord'
+exec --no-startup-id i3-msg 'workspace 1; exec terminator'
+exec --no-startup-id i3-msg 'workspace 1; exec terminator'
 exec --no-startup-id i3-msg 'workspace 2; exec firefox'
-exec --no-startup-id i3-msg 'workspace 1; exec terminator'
-exec --no-startup-id i3-msg 'workspace 1; exec terminator'
+exec --no-startup-id i3-msg 'workspace 6; exec discord'
 
 # Power Managment
 exec --no-startup-id xset s off
 exec --no-startup-id xset -dpms
 exec --no-startup-id xset s noblank
 
-# Launch Polybar
+# Polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # Display Wallpaper, always.
@@ -71,7 +71,7 @@ bindsym $mod+f exec nemo
 # Screenshot
 bindsym $mod+c exec screengrab
 
-# Launch Terminal
+# Terminal
 bindsym $mod+t exec terminator
 
 # Kill focused window
