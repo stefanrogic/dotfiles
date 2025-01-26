@@ -41,7 +41,7 @@
     # Offset from the origin
     # NOTE: Dunst from version 1.11 and older use this alternative notation
     # offset = 10x50
-    offset = (4, 40)
+    offset = (3, 40)
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0
@@ -111,7 +111,7 @@
     frame_width = 2
 
     # Defines color of the frame around the notification window.
-    frame_color = "#ebdbb2"
+    frame_color = "#a89984"
 
     # Size of gap to display between notifications - requires a compositor.
     # If value is greater than 0, separator_height will be ignored and a border
