@@ -20,9 +20,9 @@ for_window [class="^.*"] border pixel 2
 ### STARTUP ###
 ###############
 exec --no-startup-id i3-msg 'workspace 1; exec terminator'
-exec --no-startup-id i3-msg 'workspace 1; exec terminator'
-exec --no-startup-id i3-msg 'workspace 2; exec firefox'
-exec --no-startup-id i3-msg 'workspace 6; exec discord'
+# exec --no-startup-id i3-msg 'workspace 1; exec terminator'
+# exec --no-startup-id i3-msg 'workspace 2; exec firefox'
+# exec --no-startup-id i3-msg 'workspace 6; exec discord'
 
 # Power Managment
 exec --no-startup-id xset s off
@@ -38,9 +38,6 @@ exec_always feh --bg-fill ~/Pictures/wallpaper/fly-agaric-gruv.jpg
 # Blue Light Filter
 exec --no-startup-id redshift-gtk
 
-# RGB !FIX
-exec --no-startup-id openrgb -p Naga --autostart
-
 # Notification Manager
 exec_always --no-startup-id dunst
 
@@ -52,9 +49,6 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- betterlockscreen -l
 
 # Network Manager
 exec --no-startup-id nm-applet
-
-# Monitor
-exec --no-startup-id xrandr --output HDMI-2 --right-of HDMI-1 --rate 165
 
 ############################################################################
 
@@ -88,7 +82,7 @@ set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-#bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+# bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # Media Player Controls
 bindsym XF86AudioPlay exec playerctl play-pause
