@@ -6,9 +6,9 @@
 set $mod Mod4
 
 # Colors
-client.focused  #a89984 #a89984 #ffffff #a89984 #a89984
-client.focused_inactive  #8F8F8F #8F8F8F #ffffff #8F8F8F #8F8F8F
-client.unfocused  #8F8F8F #8F8F8F #ffffff #8F8F8F #8F8F8F
+client.focused  #ebdbb2 #ebdbb2 #ffffff #ebdbb2 #ebdbb2
+client.focused_inactive  #1d2021 #1d2021 #ffffff #1d2021 #1d2021
+client.unfocused  #1d2021 #1d2021 #ffffff #1d2021 #1d2021
 
 # Provide Gaps to Windows.
 gaps inner 17
@@ -39,7 +39,7 @@ exec_always feh --bg-fill ~/Pictures/wallpaper/fly-agaric-gruv.jpg
 exec --no-startup-id redshift-gtk
 
 # RGB !FIX
-exec --no-startup-id openrgb -p default --autostart
+exec --no-startup-id openrgb -p Naga --autostart
 
 # Notification Manager
 exec_always --no-startup-id dunst
@@ -148,7 +148,7 @@ bindsym $mod+e layout toggle split
 
 # 7] toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
-bindsym $mod+y resize set 1200 px 1100 px, move position center
+bindsym $mod+y move position center
 
 # 8] change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
